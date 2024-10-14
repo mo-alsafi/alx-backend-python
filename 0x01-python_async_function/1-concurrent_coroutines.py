@@ -1,4 +1,4 @@
-#!/bin/usr/env python3
+#!/usr/bin/env python3
 """ alx-backend-python/0x01-python_async_function/1-concurrent_coroutines.py"""
 
 import asyncio
