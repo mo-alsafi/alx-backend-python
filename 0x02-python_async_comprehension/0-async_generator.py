@@ -3,13 +3,13 @@
 
 import asyncio
 import random
-from typing import AsyncGenerator
+from typing import Generator
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """coroutine well run 10 times.
        each time well wait one second then
        yield a random num"""
-    for i in range(10):
+    for _ in range(10):
         await asyncio.sleep(1)
         yield random.uniform(1, 10)
     
