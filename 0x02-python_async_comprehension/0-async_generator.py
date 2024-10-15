@@ -3,8 +3,9 @@
 
 import asyncio
 import random
+from typing import AsyncGenerator
 
-async def async_generator():
+async def async_generator() -> AsyncGenerator[float, None]:
     """coroutine well run 10 times.
        each time well wait one second then
        yield a random num"""
